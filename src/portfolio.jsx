@@ -640,7 +640,7 @@ const ProjectsSection = ({ darkMode }) => {
       approach: 'Built a computer vision pipeline using YOLO for face detection and OpenCV for eye-tracking with frame-by-frame analysis.',
       result: 'Real-time alert system that detects drowsiness and triggers audio/visual warnings before accidents occur.',
       tech: ['YOLO', 'OpenCV', 'Python', 'Computer Vision', 'Real-time Processing'],
-      github: '#',
+      
       featured: true
     },
     {
@@ -651,7 +651,7 @@ const ProjectsSection = ({ darkMode }) => {
       approach: 'Fine-tuned DistilBERT for multi-class classification. Built automated RSS pipeline with MySQL storage.',
       result: 'Automated categorization system processing news feeds with high accuracy, enabling efficient content discovery.',
       tech: ['DistilBERT', 'NLP', 'RSS', 'MySQL', 'Python', 'Transformers'],
-      github: '#',
+
       featured: true
     },
     {
@@ -662,7 +662,7 @@ const ProjectsSection = ({ darkMode }) => {
       approach: 'Engineered features from weather, time, and seasonal data. Built stacking ensemble combining multiple regressors.',
       result: 'Achieved R² = 0.885, enabling accurate demand forecasting for optimal bike distribution.',
       tech: ['Scikit-learn', 'Stacking Ensemble', 'Feature Engineering', 'Regression', 'Python'],
-      github: '#'
+   
     },
     {
       title: 'Book Recommendation System',
@@ -672,7 +672,7 @@ const ProjectsSection = ({ darkMode }) => {
       approach: 'Implemented collaborative filtering and content-based algorithms. Built Flask web interface for real-time recommendations.',
       result: 'Personalized recommendation engine deployed as interactive web application.',
       tech: ['Flask', 'Collaborative Filtering', 'Python', 'ML', 'Web App'],
-      github: '#'
+ 
     }
   ];
 
@@ -721,23 +721,7 @@ const ProjectsSection = ({ darkMode }) => {
                         )}
                       </div>
                     </div>
-                    <a
-                      href={project.github}
-                      onClick={(e) => {
-                        if (project.github !== '#') {
-                          e.preventDefault();
-                          window.open(project.github, '_blank', 'noopener,noreferrer');
-                        }
-                      }}
-                      className="p-2 rounded-xl hover:bg-cyan-500 hover:text-white transition-all duration-300 cursor-pointer"
-                      style={{
-                        backgroundColor: darkMode ? '#334155' : '#f1f5f9',
-                        color: darkMode ? '#cbd5e1' : '#475569'
-                      }}
-                      aria-label={`View ${project.title} on GitHub`}
-                    >
-                      <Icons.Github size={18} />
-                    </a>
+                   
                   </div>
 
                   <div className="space-y-3 sm:space-y-4">
@@ -1003,9 +987,7 @@ const AboutSection = ({ darkMode }) => {
            
 
                 <p>
-                  Outside of data, you'll find me exploring music production or leading teams —
-                  experiences that taught me collaboration and creative problem-solving translate
-                  directly to better technical work.
+                  I’m a musician. Drumming taught me timing, control, and how to own a stage — not everything needs to be broken down.
                 </p>
               </div>
 
@@ -1056,7 +1038,7 @@ const ContactSection = ({ darkMode }) => {
       icon: <Icons.Github size={24} />,
       label: 'GitHub',
       value: 'View my repositories',
-      href: 'https://github.com/sherwynmisquitta',
+      href: 'https://github.com/SherwynM',
       color: 'from-slate-700 to-slate-900',
       isExternal: true
     },
@@ -1087,13 +1069,8 @@ const ContactSection = ({ darkMode }) => {
               <Icons.Mail size={16} />
               Get in Touch
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6" style={{ color: darkMode ? '#ffffff' : '#0f172a' }}>
-              Let's Build Something
-            </h2>
-            <p className="text-base sm:text-lg max-w-xl mx-auto" style={{ color: darkMode ? '#cbd5e1' : '#475569' }}>
-              Open to Data Science roles, ML engineering positions, and interesting collaborations.
-              Let's talk about how I can add value to your team.
-            </p>
+            
+        
           </div>
         </AnimatedSection>
 
